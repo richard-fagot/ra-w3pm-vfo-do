@@ -57,17 +57,6 @@ F 3 "~" H 7600 1250 50  0001 C CNN
 	1    7600 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x03_Male J6
-U 1 1 5F261CD2
-P 8200 2650
-F 0 "J6" H 8172 2582 50  0000 R CNN
-F 1 "Contraste" H 8172 2673 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 8200 2650 50  0001 C CNN
-F 3 "~" H 8200 2650 50  0001 C CNN
-	1    8200 2650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9250 1000 9250 1100
 Wire Wire Line
@@ -193,17 +182,6 @@ F 3 "~" H 9650 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5F2874D4
-P 8200 3600
-F 0 "J7" H 8308 3781 50  0000 C CNN
-F 1 "Backlight" H 8308 3690 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8200 3600 50  0001 C CNN
-F 3 "~" H 8200 3600 50  0001 C CNN
-	1    8200 3600
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0109
 U 1 1 5F289F42
 P 9250 4250
@@ -247,30 +225,11 @@ Text GLabel 9450 3700 0    50   Input ~ 0
 D7
 Text GLabel 9450 3800 0    50   Input ~ 0
 A
-Text GLabel 9450 3900 0    50   Input ~ 0
-K
 Wire Wire Line
 	9250 4250 9450 4250
 Wire Wire Line
 	9450 4250 9450 3900
 Connection ~ 9250 4250
-Wire Wire Line
-	7800 2300 7800 2550
-Wire Wire Line
-	7800 2550 8000 2550
-$Comp
-L power:GND #PWR0111
-U 1 1 5F29A82B
-P 8000 2750
-F 0 "#PWR0111" H 8000 2500 50  0001 C CNN
-F 1 "GND" H 8005 2577 50  0000 C CNN
-F 2 "" H 8000 2750 50  0001 C CNN
-F 3 "" H 8000 2750 50  0001 C CNN
-	1    8000 2750
-	1    0    0    -1  
-$EndComp
-Text GLabel 8000 2650 0    50   Input ~ 0
-V0
 Text GLabel 1450 2250 0    50   Input ~ 0
 RS
 Text GLabel 1450 2150 0    50   Input ~ 0
@@ -283,10 +242,6 @@ Text GLabel 1450 2450 0    50   Input ~ 0
 D6
 Text GLabel 1450 2350 0    50   Input ~ 0
 D7
-Wire Wire Line
-	8000 3300 8000 3500
-Text GLabel 8000 3600 0    50   Input ~ 0
-A
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 5F29F581
@@ -487,17 +442,6 @@ Wire Wire Line
 	8700 1000 9250 1000
 Wire Wire Line
 	8150 1400 8700 1400
-$Comp
-L power:+5V #PWR0123
-U 1 1 5F29D171
-P 8000 3300
-F 0 "#PWR0123" H 8000 3150 50  0001 C CNN
-F 1 "+5V" H 8015 3473 50  0000 C CNN
-F 2 "" H 8000 3300 50  0001 C CNN
-F 3 "" H 8000 3300 50  0001 C CNN
-	1    8000 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 3050 2600 3200
 $Comp
@@ -559,23 +503,6 @@ F 3 "" H 6400 2000 50  0001 C CNN
 	1    6400 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 9400 4700 0    50   Input ~ 0
-K
-$Comp
-L power:GND #PWR0124
-U 1 1 5F2D062B
-P 9600 4750
-F 0 "#PWR0124" H 9600 4500 50  0001 C CNN
-F 1 "GND" H 9605 4577 50  0000 C CNN
-F 2 "" H 9600 4750 50  0001 C CNN
-F 3 "" H 9600 4750 50  0001 C CNN
-	1    9600 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 4700 9600 4700
-Wire Wire Line
-	9600 4700 9600 4750
 NoConn ~ 3750 2450
 NoConn ~ 3750 2550
 NoConn ~ 1850 1050
@@ -664,17 +591,6 @@ F 3 "" H 9100 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0120
-U 1 1 5F416A92
-P 7800 2300
-F 0 "#PWR0120" H 7800 2150 50  0001 C CNN
-F 1 "+5V" H 7815 2473 50  0000 C CNN
-F 2 "" H 7800 2300 50  0001 C CNN
-F 3 "" H 7800 2300 50  0001 C CNN
-	1    7800 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0121
 U 1 1 5F4173FC
 P 3650 3150
@@ -737,4 +653,72 @@ Wire Wire Line
 Wire Wire Line
 	9250 900  9250 1000
 Connection ~ 9250 1000
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5F41068C
+P 7450 2750
+F 0 "RV1" H 7381 2796 50  0000 R CNN
+F 1 "Contraste" H 7381 2705 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 7450 2750 50  0001 C CNN
+F 3 "~" H 7450 2750 50  0001 C CNN
+	1    7450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV2
+U 1 1 5F4111C8
+P 7500 4050
+F 0 "RV2" H 7430 4096 50  0000 R CNN
+F 1 "Backlight" H 7430 4005 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 7500 4050 50  0001 C CNN
+F 3 "~" H 7500 4050 50  0001 C CNN
+	1    7500 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 2750 2    50   Input ~ 0
+V0
+$Comp
+L power:+5V #PWR0111
+U 1 1 5F41180E
+P 7450 2400
+F 0 "#PWR0111" H 7450 2250 50  0001 C CNN
+F 1 "+5V" H 7465 2573 50  0000 C CNN
+F 2 "" H 7450 2400 50  0001 C CNN
+F 3 "" H 7450 2400 50  0001 C CNN
+	1    7450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5F411DEC
+P 7450 3000
+F 0 "#PWR0120" H 7450 2750 50  0001 C CNN
+F 1 "GND" H 7455 2827 50  0000 C CNN
+F 2 "" H 7450 3000 50  0001 C CNN
+F 3 "" H 7450 3000 50  0001 C CNN
+	1    7450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2400 7450 2600
+Wire Wire Line
+	7450 2900 7450 3000
+$Comp
+L power:+5V #PWR0123
+U 1 1 5F4166DE
+P 7500 3700
+F 0 "#PWR0123" H 7500 3550 50  0001 C CNN
+F 1 "+5V" H 7515 3873 50  0000 C CNN
+F 2 "" H 7500 3700 50  0001 C CNN
+F 3 "" H 7500 3700 50  0001 C CNN
+	1    7500 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 4050 2    50   Input ~ 0
+A
+NoConn ~ 7500 4200
+Wire Wire Line
+	7500 3700 7500 3900
+Text Label 9350 3950 0    50   ~ 0
+K
 $EndSCHEMATC
