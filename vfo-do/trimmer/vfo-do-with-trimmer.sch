@@ -523,7 +523,7 @@ NoConn ~ 9450 3300
 Wire Wire Line
 	8450 1000 8700 1000
 $Comp
-L arduino_nano_v3_5v_input:Arduino_Nano_v3.x A1
+L vfo-do-with-trimmer-rescue:Arduino_Nano_v3.x-arduino_nano_v3_5v_input A1
 U 1 1 5F40DF5B
 P 1950 2050
 F 0 "A1" H 1950 961 50  0000 C CNN
@@ -617,7 +617,7 @@ Wire Wire Line
 Connection ~ 2050 3050
 Connection ~ 7600 1000
 $Comp
-L arduino_nano_v3_5v_input:L7805 U1
+L vfo-do-with-trimmer-rescue:L7805-arduino_nano_v3_5v_input U1
 U 1 1 5F44051C
 P 8150 1000
 F 0 "U1" H 8150 1242 50  0000 C CNN
@@ -721,4 +721,92 @@ Wire Wire Line
 	7500 3700 7500 3900
 Text Label 9350 3950 0    50   ~ 0
 K
+$Comp
+L Connector:TestPoint_Alt TP1
+U 1 1 5F44EF81
+P 4800 1700
+F 0 "TP1" H 4858 1818 50  0000 L CNN
+F 1 "TestPoint_Alt" H 4858 1727 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5000 1700 50  0001 C CNN
+F 3 "~" H 5000 1700 50  0001 C CNN
+	1    4800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP2
+U 1 1 5F44F871
+P 5100 1700
+F 0 "TP2" H 5158 1818 50  0000 L CNN
+F 1 "TestPoint_Alt" H 5158 1727 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5300 1700 50  0001 C CNN
+F 3 "~" H 5300 1700 50  0001 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP3
+U 1 1 5F44FBE5
+P 5450 1700
+F 0 "TP3" H 5508 1818 50  0000 L CNN
+F 1 "TestPoint_Alt" H 5508 1727 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5650 1700 50  0001 C CNN
+F 3 "~" H 5650 1700 50  0001 C CNN
+	1    5450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP4
+U 1 1 5F44FF88
+P 5750 1700
+F 0 "TP4" H 5808 1818 50  0000 L CNN
+F 1 "TestPoint_Alt" H 5808 1727 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5950 1700 50  0001 C CNN
+F 3 "~" H 5950 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5F4502D5
+P 4800 1700
+F 0 "#PWR0124" H 4800 1450 50  0001 C CNN
+F 1 "GND" H 4805 1527 50  0000 C CNN
+F 2 "" H 4800 1700 50  0001 C CNN
+F 3 "" H 4800 1700 50  0001 C CNN
+	1    4800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5F450BEC
+P 5100 1700
+F 0 "#PWR0125" H 5100 1450 50  0001 C CNN
+F 1 "GND" H 5105 1527 50  0000 C CNN
+F 2 "" H 5100 1700 50  0001 C CNN
+F 3 "" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5F451044
+P 5450 1700
+F 0 "#PWR0126" H 5450 1450 50  0001 C CNN
+F 1 "GND" H 5455 1527 50  0000 C CNN
+F 2 "" H 5450 1700 50  0001 C CNN
+F 3 "" H 5450 1700 50  0001 C CNN
+	1    5450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5F451422
+P 5750 1700
+F 0 "#PWR0127" H 5750 1450 50  0001 C CNN
+F 1 "GND" H 5755 1527 50  0000 C CNN
+F 2 "" H 5750 1700 50  0001 C CNN
+F 3 "" H 5750 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
