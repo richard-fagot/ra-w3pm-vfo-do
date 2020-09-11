@@ -1,4 +1,4 @@
-update=25/08/2020 11:35:32
+update=10/09/2020 09:58:52
 version=1
 last_client=pcbnew
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=../trimmer/vfo-do-with-trimmer.net
+LastNetListRead=vfo-do-with-trimmer.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
