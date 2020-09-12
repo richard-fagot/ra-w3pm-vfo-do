@@ -43,5 +43,4 @@ L'ensemble des composants coûte environ 30€ hors boitier et PCB.
 | Encodeur rotatif | 1 | Encodeur rotatif avec son bouton || 0,50€ |
 | Coaxial | qsp | Câble coaxial RG316 || 0,50€|
 | Boitier |||||
-|----|-----|-----|-----|-----|
 
