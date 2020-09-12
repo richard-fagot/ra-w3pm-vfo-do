@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name arduino_nano_v3_5v_input)(type Legacy)(uri ${KIPRJMOD}/arduino_nano_v3_5v_input.lib)(options "")(descr ""))
-)
