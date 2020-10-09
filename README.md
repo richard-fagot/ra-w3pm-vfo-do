@@ -11,11 +11,20 @@ Ce PCB repose sur le [schéma créé par W3PM](http://www.knology.net/~gmarcus/S
 
 Après avoir fait réaliser le PCB, souder les composants dans cet ordre :
 
-- les condensateurs et les résistances ;
-- la diode Schottky ;
-- le régulateur de tension en l'appliquant bien sur le PCB pour évacuer la chaleur efficacement ;
-- les deux potentiomètres ;
-- les connecteurs.
+## Alimentation
+Souder les composants dans cet ordre :
+- C3, C4, C5 et C6 ;
+- D1 ;
+- U1 (utiliser une panne plate et large pour le GND).
+
+Vérifier que l'alimenation de la carte est correctement régulée en appliquant une tension d'au moins 10V au niveau de l'emplacement du connecteur J9. La tension mesurée au pin *+5V* à l'emplacement du connecteur GPS doit être de 5V.
+
+Si ce n'est pas le cas, mesurer la tension entre la sortie de U1 et sa patte dissipateur/GND :
+- Si elle est différente de 5V c'est qu'au moins un des condensateurs C3, C4, C5 ou C6 est défectueux ou de mauvaise valeur ;
+- Si elle vaut 5V c'est que la soudure du GND n'est pas correctement réalisée.
+
+![78M05](./assets/img/78M05.png)
+
 
 Éviter de souder l'arduino directement, utiliser plutôt des connecteurs.
 

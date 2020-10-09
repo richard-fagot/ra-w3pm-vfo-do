@@ -234,13 +234,13 @@ Text GLabel 1150 4150 0    50   Input ~ 0
 RS
 Text GLabel 1150 4050 0    50   Input ~ 0
 E
-Text GLabel 1150 4550 0    50   Input ~ 0
-D4
-Text GLabel 1150 4450 0    50   Input ~ 0
-D5
-Text GLabel 1150 4350 0    50   Input ~ 0
-D6
 Text GLabel 1150 4250 0    50   Input ~ 0
+D4
+Text GLabel 1150 4350 0    50   Input ~ 0
+D5
+Text GLabel 1150 4450 0    50   Input ~ 0
+D6
+Text GLabel 1150 4550 0    50   Input ~ 0
 D7
 $Comp
 L Connector:Conn_01x03_Male J1
